@@ -79,6 +79,6 @@ melt_data <- melt(combined_data, id = id_labels, measure.vars = data_labels)
 #Apply mean function to dataset using dcast function
 tidy_dataset <- dcast(melt_data, Subject + Activity_Label ~ variable, mean)
 
-write.table(tidy_dataset, file = "./uci_har_tidy_data.txt")
-write.table(tidy_dataset, file="./uci_har_tidy_data.csv")
+write.table(tidy_dataset, file = "./uci_har_tidy_data.txt", row.names=FALSE)
+write.table(tidy_dataset, file="./uci_har_tidy_data.csv", row.names=FALSE)
 
