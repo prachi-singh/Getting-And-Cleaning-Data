@@ -93,7 +93,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="instructions-for-downloading-data-running-script-and-reading-file" class="section level2">
 <h2>Instructions for downloading data, running script and reading file</h2>
 <ol style="list-style-type: decimal">
-<li>Download the original data (<code>UCI HAR Dataset.zip</code>) into your present working directory and unzip it. <strong>Make sure <code>UCI HAR Dataset</code> folder is in your working directory before running the script.</strong><br /></li>
+<li>Download the original data (<code>UCI HAR Dataset.zip</code>) into your present working directory and unzip it. <strong>Make sure <em>UCI HAR Dataset</em> folder is in your working directory before running the script.</strong><br /></li>
 <li>Make sure you have following R packages installed: <code>data.frame</code>, <code>reshape2</code>, and <code>tidyr</code>. Else, install them using <code>install.packages()</code><br /></li>
 <li>Run the run_analysis.R script in your console.</li>
 <li><p><code>uci_har_tidy_data.txt</code> and <code>uci_har_tidy_data.csv</code> files will be written into your working directory. Read files using:</p>
@@ -140,9 +140,9 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p><strong>Analyze data</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Differentiate ID variables (Subject, Activity labels) from the dataset using <code>setdiff()</code>.</p></li>
-<li><p>Use <code>melt()</code> function from <code>reshape2</code> package to assign measured values and id values.</p></li>
+<li><p>Use <code>melt()</code> function from <code>reshape2</code> package to “melt” measured values and id values, that is, spread column values over rows so they repeat and isolate each variable/attribute measurement which can then be cast into tidy data set.</p></li>
 <li><p>Apply mean function to dataset using <code>dcast()</code> function to get the average of each variable for each subject and each activity.</p></li>
-<li><p>The resulting data set is horizontally tidy. Write the table into file (CSV and TXT formats) using <code>write.table()</code>.</p></li>
+<li><p>The resulting data set is vertically tidy. Write the table into file (CSV and TXT formats) using <code>write.table()</code>.</p></li>
 </ol>
 <p><strong>Read table</strong></p>
 <p>Table can be read into the R console using <code>read.table()</code>.</p>
