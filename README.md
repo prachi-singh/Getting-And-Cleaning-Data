@@ -1,9 +1,7 @@
----
-title: "(READ ME) UCI Human Activity Recognition Data Analysis"
-author: "Prachi Singh"
-date: "January 25, 2015"
+#(READ ME) UCI Human Activity Recognition Data Analysis    
 
----
+
+
 This project takes a raw human activity recognition dataset and uses a script run_analysis.R to clean it using Hadley Wickam's [tidy data principles](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html). Desired result, according the Getting And Cleaning Data course assignment specs, is to arrive at a tidy data set with the average of each variable for each activity and each subject.
 
 ##run_analysis.R  

@@ -1,9 +1,10 @@
----
-title: "CodeBook"
-author: "Prachi Singh"
-date: "January 25, 2015"
-output: html_document
----
+#Code Book: Tidy Data    
+
+
+
+###Prachi Singh    
+###January 25, 2015"    
+
 
 ##Raw Data Information:
 
