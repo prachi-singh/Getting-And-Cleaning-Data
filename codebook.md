@@ -1,9 +1,8 @@
 #Code Book: Tidy Data    
-
-
+###UCI Human Activity Recognition Data Analysis   
 
 ###Prachi Singh    
-###January 25, 2015"    
+**January 25, 2015**   
 
 
 ##Raw Data Information:
